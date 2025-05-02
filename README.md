@@ -1,6 +1,3 @@
-Mana, siz uchun `README.md` faylini yozib berdim, bu Laravel loyihangizni o'rnatish va ishlatish bo'yicha tushuntirishlarni o'z ichiga oladi.
-
-````markdown
 # Tenant Management API
 
 Bu loyiha tenant ma'lumotlarini saqlash va olish uchun RESTful API yaratishni ko'rsatadi. API orqali tenants (ijarachi) haqida ma'lumotlarni olish, yaratish va yangilash mumkin.
