@@ -70,15 +70,6 @@ GET /api/tenants/1
 }
 ```
 
-### 2. **GET /api/tenants/{id}/config**
-
-Tenantning faqat konfiguratsiyasini olish uchun endpoint.
-
-#### So'rov:
-
-```http
-GET /api/tenants/1/config
-```
 
 #### Javob:
 
@@ -87,55 +78,6 @@ GET /api/tenants/1/config
     "enable_feature_x": true,
     "theme": "dark"
 }
-```
-
-### 3. **POST /api/tenants**
-
-Yangi tenant yaratish uchun endpoint.
-
-#### So'rov:
-
-```http
-POST /api/tenants
-```
-
-#### Ma'lumotlar (JSON):
-
-```json
-{
-    "name": "New Tenant",
-    "domain": "newtenant.domain.com",
-    "config_json": {
-        "enable_feature_x": true,
-        "theme": "light"
-    }
-}
-```
-
-#### Javob:
-
-```json
-{
-    "id": 2,
-    "name": "New Tenant",
-    "domain": "newtenant.domain.com",
-    "config_json": {
-        "enable_feature_x": true,
-        "theme": "light"
-    },
-    "created_at": "2025-05-02T09:40:10.000000Z",
-    "updated_at": "2025-05-02T09:40:10.000000Z"
-}
-```
-
-### 4. **PUT /api/tenants/{id}**
-
-Tenant ma'lumotlarini yangilash uchun endpoint.
-
-#### So'rov:
-
-```http
-PUT /api/tenants/1
 ```
 
 #### Ma'lumotlar (JSON):
